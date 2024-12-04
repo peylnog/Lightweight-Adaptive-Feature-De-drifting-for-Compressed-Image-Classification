@@ -34,7 +34,7 @@ We synthesized JPEG images under various scenarios for testing. The dataset incl
 
 You can download the dataset from the following Google Drive link:
 
-[Google Drive Dataset Link]([your_link_here](https://drive.google.com/drive/folders/1_Z96FMjqNCtATiYEbTFHTuKsQEqj-s4k?usp=drive_link))
+[Google Drive Dataset Link](https://drive.google.com/drive/folders/1_Z96FMjqNCtATiYEbTFHTuKsQEqj-s4k?usp=drive_link)
 
 ### Test on ImageNet
 
@@ -45,7 +45,7 @@ To test the Resnet50 model pretrained by Pytorch, run the following command:
 ```bash
 python3 test_resnet50.py
 ```
-**Table R1: Performance of Resnet50 Pretrained by Pytorch on JPEG data ImageNet**
+**Table 1: Performance of Resnet50 Pretrained by Pytorch on JPEG data ImageNet**
 
 | JPEG-QF             | Top1 Acc $\uparrow$ |
 | ------------------ | ---------------- | 
@@ -57,6 +57,27 @@ python3 test_resnet50.py
 | Without JPEG        | 76.018       |
 
 As the QF decreases, the performance of the model, which was originally 76% in the clear (without JPEG) scenario, drops to 33%. This indicates that JPEG compression has a significant impact on the performance of ResNet50.
+
+
+Due to the patent application and confidentiality of our method's design, we are releasing an open-source baseline version of the model. However, its performance is nearly identical to the results reported in the paper, making it available for further research and practical use.
+
+```bash
+python3 test.py
+```
+**Table 2: Performance Comparison**
+
+| JPEG-QF             | Top1 Acc $\uparrow$ |
+| ------------------ | ---------------- | 
+| 7 | 33.124          | 
+| 7(**Ours**) | **60.459**         | 
+| 10    | 47.216          | 
+| 10(**Ours**) | **64.711**          | 
+| 15    | 57.313         | 
+| 15(**Ours**) | **67.919**        | 
+| 18        | 60.404        |
+| 18(**Ours**) | **68.948**         | 
+| 25        | 63.721          |
+| 25(**Ours**) | **70.171**          | 
 
 ## Cite US
 Contact email for Long Peng: longp2001@mail.ustc.edu.cn. Please cite us if this work is helpful to you. 
