@@ -16,8 +16,10 @@ JPEG is a widely used compression scheme to efficiently reduce the volume of the
 
 ## Motivation
 ![Motivation](src/task.jpg)
-![TMM1](src/TMM1.jpg)
+In real-world scenarios, JPEG compression often results in a loss of fine details within the pixel space of an image. Moreover, this compression can also lead to significant degradation or damage in the feature space, which negatively impacts the content representation. As a result, many vision tasks that perform well on high-quality, clear images tend to fail or become ineffective under such conditions.
 
+## Model
+![TMM1](src/TMM1.jpg)
 
 ## Performance
 ![performance-1](src/performance-1.jpg)
@@ -25,6 +27,14 @@ JPEG is a widely used compression scheme to efficiently reduce the volume of the
 
 ## Feature Enhancement
 ![feature_vis](src/feature_vis.jpg)
+
+## Data
+
+We synthesized JPEG images under various scenarios for testing. The dataset includes images with different compression quality factors (QF): **7**, **10**, **15**, **18**, and **25**. A lower QF indicates a higher compression level and lower image quality.
+
+You can download the dataset from the following Google Drive link:
+
+[Google Drive Dataset Link](your_link_here)
 
 
 ## Cite US
