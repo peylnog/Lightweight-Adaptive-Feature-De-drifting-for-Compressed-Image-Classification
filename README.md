@@ -34,8 +34,29 @@ We synthesized JPEG images under various scenarios for testing. The dataset incl
 
 You can download the dataset from the following Google Drive link:
 
-[Google Drive Dataset Link](your_link_here)
+[Google Drive Dataset Link]([your_link_here](https://drive.google.com/drive/folders/1_Z96FMjqNCtATiYEbTFHTuKsQEqj-s4k?usp=drive_link))
 
+### Test on ImageNet
+
+#### Resnet50 Pretrained by Pytorch
+
+To test the Resnet50 model pretrained by Pytorch, run the following command:
+
+```bash
+python3 test_resnet50.py
+```
+**Table R1: Performance of Resnet50 Pretrained by Pytorch on JPEG data ImageNet**
+
+| JPEG-QF             | Top1 Acc $\uparrow$ |
+| ------------------ | ---------------- | 
+| 7 | 33.124          | 
+| 10    | 47.216          | 
+| 15    | 57.313         | 
+| 18        | 60.404        |
+| 25        | 63.721          |
+| Without JPEG        | 76.018       |
+
+As the QF decreases, the performance of the model, which was originally 76% in the clear (without JPEG) scenario, drops to 33%. This indicates that JPEG compression has a significant impact on the performance of ResNet50.
 
 ## Cite US
 Contact email for Long Peng: longp2001@mail.ustc.edu.cn. Please cite us if this work is helpful to you. 
