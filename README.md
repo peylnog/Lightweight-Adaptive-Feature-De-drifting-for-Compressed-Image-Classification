@@ -59,7 +59,9 @@ python3 test_resnet50.py
 As the QF decreases, the performance of the model, which was originally 76% in the clear (without JPEG) scenario, drops to 33%. This indicates that JPEG compression has a significant impact on the performance of ResNet50.
 
 
-Due to the patent application and confidentiality of our method's design, we are releasing an open-source baseline version of the model. However, its performance is nearly identical to the results reported in the paper, making it available for further research and practical use.
+Due to the patent application and confidentiality of our method's design, we are releasing a baseline version of the model. However, its performance is nearly identical to the results reported in the paper, making it available for further research and practical use.
+
+[Google Drive Model Link](https://drive.google.com/drive/folders/1_Z96FMjqNCtATiYEbTFHTuKsQEqj-s4k?usp=drive_link)
 
 ```bash
 python3 test.py
